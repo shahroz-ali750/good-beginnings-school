@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Solway:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Solway:wght@300;400;500;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+}
+
+.navbar {
+  background: #fefdf6;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+  padding: 8px 20px 0 20px;
+
+  .nav-logo {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .nav-logo img {
+    width: 156px;
+    height: 115px;
+    object-fit: contain;
+  }
+  .navigation {
+    display: flex;
+    .active a span {
+      color: #ec965d;
+    }
+
+    ul {
+      height: 50px;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    li {
+      display: flex;
+      list-style: none;
+      margin-right: 10px;
+      font-size: 1rem;
+      font-family: "Quicksand", serif;
+      font-optical-sizing: auto;
+      font-weight: bold;
+
+      a {
+        text-decoration: none;
+        color: #303650;
+        span {
+          display: flex;
+          gap: 5px;
+        }
+      }
+    }
+    button {
+      width: 140px;
+      height: 50px;
+      background-color: #5d17eb;
+      color: #ffff;
+      border-radius: 5px;
+      border: 0;
+      font-family: "Solway", "Serif";
+      font-size: 1rem;
+      font-weight: 600;
+      margin-left: 10px;
+      cursor: pointer;
+      transition: 1s;
+    }
+    button:hover {
+      background: #ec965d;
+      transition: 1s;
+    }
+  }
+}
+#hero-section {
+  background: #fefdf6;
+  padding-bottom: 60px;
+  .hero-video {
+    display: flex;
+    justify-content: center;
+  }
+  .hero-video::after {
+    content: "";
+    background: url("/assets/shape-1.png");
+    position: absolute;
+    width: 211px;
+    height: 160px;
+    right: -37px;
+    top: 350px;
+    bottom: unset;
+  }
+}
+.hero-sec-btn {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btn-blue {
+  width: 162px;
+  background: #5d17eb;
+  border: 0;
+  padding: 15px;
+  font-size: 1.1rem;
+  font-family: "Solway", serif;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-blue:hover {
+  background: #ec965d;
+  transition: 1s;
+}
+.btn-orange {
+  width: 162px;
+  height: 50px;
+  background-color: #fefdf6;
+  color: #303650;
+  border-radius: 5px;
+  border: 1px solid #303650;
+  font-size: 1.1rem;
+  font-family: "Solway", serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.btn-orange:hover {
+  background-color: #ec965d;
+  transition: 1s;
+  color: #fefdf6;
+}
+.container {
+  width: 1330px;
+  margin: auto;
+  max-width: 1330px !important;
+}
+#sec-1 {
+  margin-top: 20px;
+}
+.sec-1-heading {
+  text-align: center;
+  font-family: "Solway", serif;
+  font-style: oblique;
+  margin-bottom: 90px;
+  h1 {
+    width: 50%;
+    font-size: 3.2rem;
+    margin: auto;
+    padding-top: 20px;
+  }
+  p {
+    width: 50%;
+    margin: auto;
+    font-size: 1.2rem;
+    padding-top: 20px;
+  }
+}
+.row-2 {
+  display: flex;
+  justify-content: space-around;
+  .cus-div {
+    background: #fff;
+    width: 23%;
+    border: 1px solid #e4e1db;
+    border-radius: 15px;
+    padding: 30px;
+    img {
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 1.8rem;
+      font-family: "Solway", serif;
+    }
+    li {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      margin-bottom: 10px;
+      font-family: "Quicksand", serif;
+      color: #3e3e3e;
+    }
+    button {
+      display: flex;
+      border: 0;
+      background: 0;
+      gap: 10px;
+      font-size: 1.1rem;
+      font-family: "Solway", serif;
+      font-weight: bold;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
+}
+.after-effect::after {
+  content: "";
+  background: url("/assets/shape-2.png");
+  position: absolute;
+  width: 160px;
+  height: 180px;
+  z-index: -1;
+  bottom: -550px;
+  left: -15px;
+}
+.row-3 {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 115px;
+  .div-row-3 {
+    width: 35%;
+    h1 {
+      font-size: 3.5rem;
+      margin-bottom: 30px;
+      font-family: "Solway", serif;
+      color: #303650;
+    }
+    p {
+      font-family: "Quicksand", serif;
+      color: #3e3e3e;
+      margin-bottom: 30px;
+    }
+  }
+
+}
+.after-effect-2::after{
+    content: "";
+    position: absolute;
+    background: url("/assets/shape-3.png");
+    width:  90px;
+    height: 105px;
+    left: 560px;
+    bottom: -1050px;
+
+}
+.after-effect-3::after{
+    content: "";
+    background: url("/assets/shape-4.png");
+    position: absolute;
+    width: 176px;
+    height: 194px;
+    right: -30px;
+    bottom: -1430px;
+}
