@@ -93,7 +93,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (count < target) {
         counter.innerText = Math.ceil(count + increment);
-        setTimeout(updateCounter, 10);
+        setTimeout(updateCounter, 20);
       } else {
         counter.innerText = target;
       }
